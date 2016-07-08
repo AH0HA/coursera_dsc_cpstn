@@ -1,7 +1,7 @@
 name: ShinyApp
 account: launeric
 server: shinyapps.io
-appId: 113265
-bundleId: 500132
+appId: 113267
+bundleId: 500138
 url: https://launeric.shinyapps.io/ShinyApp/
-when: 1468009257.62968
+when: 1468009867.54776
