@@ -1,0 +1,63 @@
+library(devtools)
+library(shinyapps)
+library(shiny)
+
+devtools::install_github("rstudio/shinyapps")
+devtools::install_github("rstudio/rsconnect")
+
+
+rsconnect::setAccountInfo(name='launeric', token=myToken, secret=mySecret)
+
+#dd='/home/rstudio/coursera-kayama/coursera_dsc_cpstn/ShinyApp'
+#setwd(dd)
+deployApp()
+#install_github('ramnathv/slidify')
+#install_github('slidifyLibraries' ,'ramnathv')
+#install_github('rcharts' ,'ramnathv')
+#install_github('ggvis' ,'rstudio')
+#require(devtools)
+#install_github("slidify", "ramnathv")
+#install_github("slidifyLibraries", "ramnathv")
+#library(slidify)
+#author("kayama")
+#library(knitr)
+#browseURL('index.html')
+
+
+
+
+Hi! You must be new here...
+
+Thanks for trying out shinyapps.io! You'll need to install the rsconnect R package to get started. The rsconnect package enables you to deploy and manage your Shiny applications directly from your R console. To get started, fire up your favorite IDE, and follow the directions below. 
+
+
+Step 1 – Install rsconnect 
+
+
+The rsconnect package can be installed directly from CRAN. To make sure you have the latest version run following code in your R console: 
+install.packages('rsconnect')
+
+
+Step 2 – Authorize Account 
+
+
+
+The rsconnect package must be authorized to your account using a token and secret. To do this, click the copy button below and we'll copy the whole command you need to your clipboard. Just paste it into your console to authorize your account. Once you've entered the command successfully in R, that computer is now authorized to deploy applications to your shinyapps.io account. 
+
+
+{{ text }}
+
+{{ secretButtonText }}  
+  {{copyButtonText }} 
+
+
+
+In the future, you can manage your tokens from the Tokens page the settings menu. 
+
+
+Step 3 – Deploy 
+
+
+Once the rsconnect package has been configured, you're ready to deploy your first application. If you haven't written any applications yet, you can also checkout the Getting Started Guide for instructions on how to deploy our demo application. Run the following code in your R console. 
+library(rsconnect)
+rsconnect::deployApp('path/to/your/app')
