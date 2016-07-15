@@ -16,10 +16,14 @@ suppressPackageStartupMessages(c(
         library(markdown),
         library(stylo)))
 
-source("./inputCleaner.R")
-final4Data <- readRDS(file="./data/v4gram.rds")
-final3Data <- readRDS(file="./data/v3gram.rds")
-final2Data <- readRDS(file="./data/v2gram.rds")
+source("./shinyPreprocess.R")
+source("./myPick.R")
+source("./dt2str.R")
+df1x<- readRDS(file="./data/df1x.rds")
+df2x<- readRDS(file="./data/df2x.rds")
+df3x<- readRDS(file="./data/df3x.rds")
+df4x<- readRDS(file="./data/df4x.rds")
+
 
 
 shinyServer(function(input, output) {
